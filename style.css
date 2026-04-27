@@ -1,0 +1,39 @@
+body {
+  font-family: Arial;
+  text-align: center;
+  padding: 20px;
+}
+
+h1, h2 {
+  font-size: 24px;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+button {
+  padding: 20px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: none;
+  background: #007bff;
+  color: white;
+}
+
+button:active {
+  background: #0056b3;
+}
+
+.question {
+  margin: 20px 0;
+}
+
+textarea, input, select {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 16px;
+}
