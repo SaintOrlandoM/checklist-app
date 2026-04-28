@@ -1,10 +1,6 @@
 function selectArea(area) {
   localStorage.setItem("area", area);
-  window.location.href = "./linea.html";
-}
-
-function goBack() {
-  window.location.href = "./index.html";
+  window.location.href = "linea.html";
 }
 
 const area = localStorage.getItem("area");
@@ -12,7 +8,7 @@ const area = localStorage.getItem("area");
 if (document.getElementById("tituloArea")) {
 
   if (!area) {
-    window.location.href = "./index.html";
+    window.location.href = "index.html";
   }
 
   document.getElementById("tituloArea").innerText = area;

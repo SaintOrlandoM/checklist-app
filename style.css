@@ -16,8 +16,8 @@ body {
 }
 
 .logo {
-  width: 120px;
-  margin-bottom: 5px;
+  width: 140px;
+  margin-bottom: 8px;
 }
 
 h1 {
@@ -58,6 +58,7 @@ button:active {
   background: #007a3d;
 }
 
+/* BOTON REGRESAR */
 .back {
   margin-top: 20px;
   background: #003A8F;
