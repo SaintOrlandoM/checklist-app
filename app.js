@@ -1,47 +1,34 @@
-let area = localStorage.getItem("area") || "";
-let respuestas = {};
-
-function selectArea(a) {
-  localStorage.setItem("area", a);
-  window.location.href = "form.html";
+function selectArea(area) {
+  localStorage.setItem("area", area);
+  window.location.href = "linea.html";
 }
 
-if (document.getElementById("areaTitle")) {
-  document.getElementById("areaTitle").innerText = "Área: " + area;
-}
+const area = localStorage.getItem("area");
 
-function setAnswer(q, val) {
-  respuestas[q] = val;
-}
+if (document.getElementById("tituloArea")) {
 
-function enviar() {
-  let turno = document.getElementById("turno").value;
-  let empleado = document.getElementById("empleado").value;
-  let obs = document.getElementById("obs").value;
+  document.getElementById("tituloArea").innerText = area;
 
-  if (!turno || !empleado) {
-    alert("Completa todos los campos");
-    return;
+  const contenedor = document.getElementById("lineas");
+
+  let opciones = [];
+
+  if (area === "Ensamble") {
+    opciones = ["ENS3", "ENS12", "ENSXL", "ENS13"];
+  } else if (area === "Control Final") {
+    opciones = ["CTL1", "CONT", "CTL2", "CTL5"];
   }
 
-  let data = {
-    area,
-    turno,
-    empleado,
-    respuestas,
-    observaciones: obs,
-    fecha: new Date().toLocaleString()
-  };
+  opciones.forEach(op => {
+    const btn = document.createElement("button");
+    btn.innerText = op;
 
-  fetch("https://script.google.com/macros/s/AKfycbwsfsfyFAIfM0tmrIDeIQXWdR5ISth5Rq6sqBvBWpYTz-MntYZWlK4j1qBBJYmrNKet/exec", {
-    method: "POST",
-    body: JSON.stringify(data)
-  })
-  .then(res => res.text())
-  .then(() => {
-    document.getElementById("status").innerText = "✅ Enviado correctamente";
-  })
-  .catch(() => {
-    document.getElementById("status").innerText = "❌ Error al enviar";
+    btn.onclick = () => {
+      localStorage.setItem("linea", op);
+      alert("Seleccionaste: " + op);
+      // aquí después iremos al checklist
+    };
+
+    contenedor.appendChild(btn);
   });
 }

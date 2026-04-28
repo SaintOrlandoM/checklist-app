@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Laminado</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="header">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Saint-Gobain_logo.svg" class="logo">
+  <h1>LAMINADO</h1>
+</div>
+
+<h2>Selecciona Área</h2>
+
+<div class="grid">
+  <button onclick="selectArea('Ensamble')">ENSAMBLES</button>
+  <button onclick="selectArea('Control Final')">CONTROL FINAL</button>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

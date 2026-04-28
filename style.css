@@ -1,39 +1,54 @@
 body {
-  font-family: Arial;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f6f9;
   text-align: center;
-  padding: 20px;
 }
 
-h1, h2 {
-  font-size: 24px;
+/* HEADER */
+.header {
+  background: #003A8F;
+  color: white;
+  padding: 15px;
 }
 
+.logo {
+  width: 120px;
+  margin-bottom: 5px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 22px;
+  letter-spacing: 2px;
+}
+
+/* TITULOS */
+h2 {
+  margin: 20px 0;
+  color: #003A8F;
+}
+
+/* GRID BOTONES */
 .grid {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  padding: 20px;
 }
 
+/* BOTONES */
 button {
   padding: 20px;
   font-size: 18px;
-  border-radius: 10px;
+  border-radius: 12px;
   border: none;
-  background: #007bff;
+  background: #00A651;
   color: white;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
 }
 
 button:active {
-  background: #0056b3;
-}
-
-.question {
-  margin: 20px 0;
-}
-
-textarea, input, select {
-  width: 90%;
-  padding: 10px;
-  margin: 10px 0;
-  font-size: 16px;
+  background: #007a3d;
 }
