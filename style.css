@@ -4,7 +4,7 @@
 
 body {
   margin: 0;
-  font-family: 'Segoe UI', Arial;
+  font-family: 'Segoe UI', Arial, sans-serif;
   background: #F4F6F9;
 }
 
@@ -12,27 +12,26 @@ body {
 .header {
   background: #0B3D91;
   text-align: center;
-  padding: 15px 10px;
+  padding: 12px 10px;
 }
 
 .logo {
-  width: 180px;
+  width: 200px;
+  margin-bottom: 5px;
 }
 
 .title {
   color: white;
-  font-size: 20px;
+  font-size: 18px;
   letter-spacing: 3px;
-  margin-top: 5px;
   font-weight: bold;
 }
 
-/* CONTENIDO */
+/* CONTENEDOR */
 .container {
-  width: 100%;
   max-width: 420px;
   margin: auto;
-  padding: 20px;
+  padding: 20px 15px;
 }
 
 /* TITULO */
@@ -40,35 +39,29 @@ h2 {
   text-align: center;
   color: #0B3D91;
   margin-bottom: 25px;
-}
-
-/* GRID RESPONSIVE */
-.grid {
-  display: flex;
-  flex-direction: row;
-  gap: 12px;
+  font-size: 20px;
 }
 
 /* BOTONES */
 button {
-  flex: 1;
+  width: 100%;
   padding: 18px;
-  font-size: 16px;
-  border-radius: 14px;
+  margin-bottom: 15px;
+  font-size: 18px;
+  border-radius: 16px;
   border: none;
   background: #00A651;
   color: white;
   font-weight: bold;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
 }
 
 button:active {
   transform: scale(0.97);
 }
 
-/* RESPONSIVE EXTRA */
-@media (max-width: 400px) {
-  .grid {
-    flex-direction: column;
-  }
+/* BOTON REGRESAR */
+.back-btn {
+  background: #0B3D91;
+  margin-top: 10px;
 }
