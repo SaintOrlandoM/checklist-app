@@ -1,62 +1,83 @@
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  background: #eef2f5;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #F4F6F9;
+  color: #333;
 }
 
 /* HEADER */
 .header {
-  background: #003A8F;
-  color: white;
+  background: #0B3D91;
   text-align: center;
-  padding: 15px 10px;
+  padding: 12px 10px;
 }
 
 .logo {
-  width: 120px;
-  margin-bottom: 5px;
+  width: 110px;
+}
+
+.subtitle {
+  color: white;
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-top: 5px;
 }
 
 /* CONTENEDOR */
 .container {
   max-width: 420px;
   margin: auto;
-  padding: 20px;
-  text-align: center;
+  padding: 20px 16px;
 }
 
-/* TITULOS */
-h1 {
-  margin: 5px 0;
-  font-size: 22px;
-  letter-spacing: 2px;
-}
-
+/* TITULO */
 h2 {
+  text-align: center;
   margin-bottom: 25px;
-  color: #003A8F;
+  color: #0B3D91;
+  font-size: 20px;
 }
 
-/* BOTONES */
-button {
+/* BOTONES PRINCIPALES */
+.card-btn {
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 16px;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  background: #00A651;
+  color: white;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  transition: transform 0.1s;
+}
+
+.card-btn:active {
+  transform: scale(0.97);
+}
+
+/* BOTONES LINEAS */
+#lineas button {
   width: 100%;
   padding: 18px;
-  margin-bottom: 15px;
-  font-size: 18px;
+  margin-bottom: 12px;
   border-radius: 14px;
   border: none;
+  font-size: 17px;
   background: #00A651;
   color: white;
   font-weight: bold;
-  box-shadow: 0 5px 8px rgba(0,0,0,0.2);
-}
-
-button:active {
-  background: #007a3d;
 }
 
 /* BOTON REGRESAR */
-.back {
-  background: #003A8F;
-  margin-top: 20px;
+.back-btn {
+  width: 60%;
+  margin: 25px auto 0;
+  display: block;
+  padding: 14px;
+  border-radius: 12px;
+  background: #0B3D91;
+  color: white;
+  font-weight: bold;
 }
