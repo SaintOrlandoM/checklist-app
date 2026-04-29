@@ -19,18 +19,13 @@ if (document.getElementById("tituloArea")) {
 
   if (area === "Ensamble") {
     opciones = ["ENS3", "ENS12", "ENSXL", "ENS13"];
-  } else if (area === "Control Final") {
+  } else {
     opciones = ["CTL1", "CONT", "CTL2", "CTL5"];
   }
 
   opciones.forEach(op => {
     const btn = document.createElement("button");
     btn.innerText = op;
-
-    btn.onclick = () => {
-      localStorage.setItem("linea", op);
-      alert("Seleccionaste: " + op);
-    };
 
     contenedor.appendChild(btn);
   });

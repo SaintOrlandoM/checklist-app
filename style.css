@@ -4,7 +4,7 @@
 
 body {
   margin: 0;
-  font-family: 'Segoe UI', Arial, sans-serif;
+  font-family: Arial, sans-serif;
   background: #F4F6F9;
 }
 
@@ -12,37 +12,35 @@ body {
 .header {
   background: #0B3D91;
   text-align: center;
-  padding: 12px 10px;
+  padding: 15px 10px;
 }
 
 .logo {
-  width: 200px;
-  margin-bottom: 5px;
+  width: 180px;
 }
 
 .title {
   color: white;
-  font-size: 18px;
+  font-size: 22px;
   letter-spacing: 3px;
   font-weight: bold;
 }
 
-/* CONTENEDOR */
+/* CONTENIDO */
 .container {
   max-width: 420px;
   margin: auto;
-  padding: 20px 15px;
+  padding: 20px;
 }
 
-/* TITULO */
+/* TITULOS */
 h2 {
   text-align: center;
   color: #0B3D91;
   margin-bottom: 25px;
-  font-size: 20px;
 }
 
-/* BOTONES */
+/* BOTONES (VERTICAL SIEMPRE) */
 button {
   width: 100%;
   padding: 18px;
@@ -53,15 +51,16 @@ button {
   background: #00A651;
   color: white;
   font-weight: bold;
-  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
 }
 
-button:active {
-  transform: scale(0.97);
+/* LINEAS TAMBIÉN VERTICALES */
+#lineas button {
+  width: 100%;
+  display: block;
 }
 
 /* BOTON REGRESAR */
 .back-btn {
   background: #0B3D91;
-  margin-top: 10px;
 }
