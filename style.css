@@ -1,83 +1,74 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  font-family: 'Segoe UI', Arial, sans-serif;
+  font-family: 'Segoe UI', Arial;
   background: #F4F6F9;
-  color: #333;
 }
 
 /* HEADER */
 .header {
   background: #0B3D91;
   text-align: center;
-  padding: 12px 10px;
+  padding: 15px 10px;
 }
 
 .logo {
-  width: 110px;
+  width: 180px;
 }
 
-.subtitle {
+.title {
   color: white;
-  font-size: 14px;
-  letter-spacing: 2px;
+  font-size: 20px;
+  letter-spacing: 3px;
   margin-top: 5px;
+  font-weight: bold;
 }
 
-/* CONTENEDOR */
+/* CONTENIDO */
 .container {
+  width: 100%;
   max-width: 420px;
   margin: auto;
-  padding: 20px 16px;
+  padding: 20px;
 }
 
 /* TITULO */
 h2 {
   text-align: center;
-  margin-bottom: 25px;
   color: #0B3D91;
-  font-size: 20px;
+  margin-bottom: 25px;
 }
 
-/* BOTONES PRINCIPALES */
-.card-btn {
-  width: 100%;
-  padding: 20px;
-  margin-bottom: 15px;
-  border-radius: 16px;
+/* GRID RESPONSIVE */
+.grid {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+/* BOTONES */
+button {
+  flex: 1;
+  padding: 18px;
+  font-size: 16px;
+  border-radius: 14px;
   border: none;
-  font-size: 18px;
-  font-weight: bold;
   background: #00A651;
   color: white;
-  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
-  transition: transform 0.1s;
+  font-weight: bold;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
 }
 
-.card-btn:active {
+button:active {
   transform: scale(0.97);
 }
 
-/* BOTONES LINEAS */
-#lineas button {
-  width: 100%;
-  padding: 18px;
-  margin-bottom: 12px;
-  border-radius: 14px;
-  border: none;
-  font-size: 17px;
-  background: #00A651;
-  color: white;
-  font-weight: bold;
-}
-
-/* BOTON REGRESAR */
-.back-btn {
-  width: 60%;
-  margin: 25px auto 0;
-  display: block;
-  padding: 14px;
-  border-radius: 12px;
-  background: #0B3D91;
-  color: white;
-  font-weight: bold;
+/* RESPONSIVE EXTRA */
+@media (max-width: 400px) {
+  .grid {
+    flex-direction: column;
+  }
 }

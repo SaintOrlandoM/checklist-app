@@ -9,20 +9,24 @@
 <body>
 
 <div class="header">
-  <img src="logo.png" class="logo">
-  <p class="subtitle">LAMINADO</p>
+
+  <!-- LOGO SVG INTEGRADO -->
+  <svg viewBox="0 0 300 80" class="logo">
+    <text x="0" y="50" font-size="28" fill="#0B3D91" font-weight="bold">
+      SAINT-GOBAIN
+    </text>
+  </svg>
+
+  <div class="title">LAMINADO</div>
 </div>
 
 <div class="container">
   <h2>Selecciona Área</h2>
 
-  <button class="card-btn" onclick="selectArea('Ensamble')">
-    ENSAMBLES
-  </button>
-
-  <button class="card-btn" onclick="selectArea('Control Final')">
-    CONTROL FINAL
-  </button>
+  <div class="grid">
+    <button onclick="selectArea('Ensamble')">ENSAMBLES</button>
+    <button onclick="selectArea('Control Final')">CONTROL FINAL</button>
+  </div>
 </div>
 
 <script src="app.js"></script>
