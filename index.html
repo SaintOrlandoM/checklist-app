@@ -10,24 +10,40 @@
 
 <div class="header">
 
-  <!-- LOGO SVG -->
-  <svg viewBox="0 0 300 100" class="logo">
-    <path d="M10 60 H80 Q90 40 100 60 T130 60" stroke="#4CC3D9" stroke-width="6" fill="none"/>
-    <path d="M130 60 L150 30 L170 60" stroke="#2F6DB5" stroke-width="6" fill="none"/>
-    <path d="M170 60 L190 20 L210 60" stroke="#FF4B2B" stroke-width="6" fill="none"/>
-    <text x="10" y="90" font-size="24" fill="white" font-weight="bold">
+  <!-- LOGO MÁS FIEL -->
+  <svg viewBox="0 0 400 120" class="logo">
+
+    <!-- línea base -->
+    <path d="M10 70 H100 
+             C110 50,130 50,140 70 
+             S170 90,180 70 
+             S210 50,220 70" 
+          stroke="#4CC3D9" stroke-width="5" fill="none"/>
+
+    <!-- edificios -->
+    <path d="M220 70 L240 40 L260 70" stroke="#2F6DB5" stroke-width="5" fill="none"/>
+    <path d="M260 70 L280 20 L300 70" stroke="#FF2D55" stroke-width="5" fill="none"/>
+    <path d="M300 70 L320 45 L340 70" stroke="#FF7A00" stroke-width="5" fill="none"/>
+
+    <!-- texto -->
+    <text x="10" y="105" font-size="32" fill="white" font-weight="bold">
       SAINT-GOBAIN
     </text>
+
   </svg>
 
   <div class="title">LAMINADO</div>
 </div>
 
 <div class="container">
+
   <h2>Selecciona Área</h2>
 
-  <button onclick="selectArea('Ensamble')">ENSAMBLES</button>
-  <button onclick="selectArea('Control Final')">CONTROL FINAL</button>
+  <div class="buttons">
+    <button onclick="selectArea('Ensamble')">ENSAMBLES</button>
+    <button onclick="selectArea('Control Final')">CONTROL FINAL</button>
+  </div>
+
 </div>
 
 <script src="app.js"></script>

@@ -16,7 +16,7 @@ body {
 }
 
 .logo {
-  width: 180px;
+  width: 220px;
 }
 
 .title {
@@ -26,41 +26,40 @@ body {
   font-weight: bold;
 }
 
-/* CONTENIDO */
+/* CONTENEDOR */
 .container {
   max-width: 420px;
   margin: auto;
   padding: 20px;
 }
 
-/* TITULOS */
+/* TITULO */
 h2 {
   text-align: center;
   color: #0B3D91;
   margin-bottom: 25px;
 }
 
-/* BOTONES (VERTICAL SIEMPRE) */
+/* BOTONES CENTRADOS EN COLUMNA */
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* BOTONES */
 button {
   width: 100%;
   padding: 18px;
-  margin-bottom: 15px;
   font-size: 18px;
   border-radius: 16px;
   border: none;
   background: #00A651;
   color: white;
   font-weight: bold;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
 }
 
-/* LINEAS TAMBIÉN VERTICALES */
-#lineas button {
-  width: 100%;
-  display: block;
-}
-
-/* BOTON REGRESAR */
-.back-btn {
-  background: #0B3D91;
+button:active {
+  transform: scale(0.97);
 }
